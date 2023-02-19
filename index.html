@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тестовое задание Egorov Agency для Front-end Trainee </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Roboto&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/normalize.css" />
+
+</head>
+
+<body>
+  <div class="page_shadow"></div>
+  <div class="popup" id="popup"></div>
+  <div class="container">
+    <main class="container__body">
+      <div class="logo ">
+        <a href="#top"><img class="logo__img" src="/test_task_EA/images/logo.svg" alt="logo"></a>
+      </div>
+      <div class="construction">
+        <h2 class="costruction__title"><b>Under Construction</b></h2>
+        <p class="construction__name">We're making lots of improvements and will be back soon</p>
+      </div>
+      <div class="timer">
+        <div class="timer__items">
+          <div class="timer__item timer__day">92</div>
+          <div class="timer__item timer__hour">11</div>
+          <div class="timer__item timer__minute">41</div>
+          <div class="timer__item timer__second">48</div>
+        </div>
+        <div class="ico__items">
+          <div class="ico ico_timer"><span class="days">Days</span>
+            <span class="days-tablet">DD</span>
+          </div>
+          <div class="ico ico_timer"><span class="hours">Hours</span><span class="hours-tablet">HH</span></div>
+          <div class="ico ico_timer"><span class="minutes">Minutes</span><span class="minutes-tablet">MM</span></div>
+          <div class="ico ico_timer"><span class="seconds">Seconds</span><span class="seconds-tablet">SS</span></div>
+        </div>
+      </div>
+      <div class="event">
+        <p class="event-text">Check our event page when you wait:</p>
+        <form action="https://www.google.com" metod="get" target="_blank">
+          <button type="submit" class="event__button">Go to the event <span class="ico ico_arrow"></span></button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div class="container__footer">
+        <form action="http://localhost:3000/test_task_EA/mail.php" method="POST" name="form-email" class="form-email">
+          <div class="form">
+            <input class="form__input" type="email" id="email" name="email"
+              placeholder="Enter your Email and get notified" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              title="Invalid email address">
+            <input type="submit" class="form__submit" id="submit" value="">
+            <span class="ico_arrow ico_arrow_form"></span>
+
+
+          </div>
+        </form>
+    </footer>
+  </div>
+  <script src="scripts/index.js"></script>
+
+</body>
+
+</html>
