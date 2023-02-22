@@ -163,7 +163,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const slides = document.querySelectorAll(".slide");
 
   const images = [
-    "/test_task_EA/images/foto/img_9678.png",
+    "/test_task_EA/images/foto/1.png",
     "/test_task_EA/images/foto/2.png",
     "/test_task_EA/images/foto/3.png",
     "/test_task_EA/images/foto/4.png",
