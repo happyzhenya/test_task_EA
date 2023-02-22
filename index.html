@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Тестовое задание Egorov Agency для Front-end Trainee </title>
+  <title>Тестовое задание Egorov Agency для Front-end Trainee Сушкевич Евгении </title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Roboto&display=swap"
@@ -19,7 +19,7 @@
   <div class="page_shadow"></div>
   <div class="popup" id="popup"></div>
   <div class="container">
-    <main class="container__body">
+    <main class="container__body" id="ctn-body">
       <div class="logo ">
         <a href="#top"><img class="logo__img" src="/test_task_EA/images/logo.svg" alt="logo"></a>
       </div>
@@ -51,7 +51,7 @@
       </div>
     </main>
     <footer>
-      <div class="container__footer">
+      <div class="container__footer" id="ctn-footer">
         <form action="http://localhost:3000/test_task_EA/mail.php" method="POST" name="form-email" class="form-email">
           <div class="form">
             <input class="form__input" type="email" id="email" name="email"
@@ -60,9 +60,133 @@
             <input type="submit" class="form__submit" id="submit" value="">
             <span class="ico_arrow ico_arrow_form"></span>
 
-
           </div>
         </form>
+        <div class="more_event"><a class="button__more-event">Other events</a></div>
+
+
+        <div class="event__more" id="event" style="display: none;">
+          <p class="event__more-text">ALL events</p>
+          <div class="sliders">
+
+            <div class="slide active">
+              <div class="slider-title">
+                <p class="slider-number">01</p>
+                <p class="slider-name">Hawaiian party</p>
+                <div class="slider__content active">
+                  <p class="slider-number">01</p>
+                  <h4 class="content-title">Hawaiian party</h4>
+                  <p class="content-data">13.02.2003</p>
+                  <form action="https://www.google.com" target="_blank">
+                    <button class="content-button">More Informaton</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slider-title">
+                <p class="slider-number">02</p>
+                <p class="slider-name">Mafia party</p>
+                <div class="slider__content">
+                  <p class="slider-number">02</p>
+                  <h4 class="content-title">Mafia party</h4>
+                  <p class="content-data">13.02.2003</p>
+                  <form action="https://www.google.com" target="_blank">
+                    <button class="content-button">More Informaton</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slider-title">
+                <p class="slider-number">03</p>
+                <p class="slider-name">Party</p>
+                <div class="slider__content">
+                  <p class="slider-number">03</p>
+                  <h4 class="content-title">Party</h4>
+                  <p class="content-data">13.02.2003</p>
+                  <form action="https://www.google.com" target="_blank">
+                    <button class="content-button">More Informaton</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slider-title">
+                <p class="slider-number">04</p>
+                <p class="slider-name">Party on the beach</p>
+                <div class="slider__content">
+                  <p class="slider-number">04</p>
+                  <h4 class="content-title">Party on the beach</h4>
+                  <p class="content-data">13.02.2003</p>
+                  <form action="https://www.google.com" target="_blank">
+                    <button class="content-button">More Informaton</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slider-title">
+                <p class="slider-number">05</p>
+                <p class="slider-name">Home Security</p>
+                <div class="slider__content">
+                  <p class="slider-number">05</p>
+                  <h4 class="content-title">Home Security</h4>
+                  <p class="content-data">13.02.2003</p>
+                  <form action="https://www.google.com" target="_blank">
+                    <button class="content-button">More Informaton</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slider-title">
+                <p class="slider-number">06</p>
+                <p class="slider-name">Network Design & Implementation</p>
+                <div class="slider__content">
+                  <p class="slider-number">06</p>
+                  <h4 class="content-title">Network Design & Implementation</h4>
+                  <p class="content-data">13.02.2003</p>
+                  <form action="https://www.google.com" target="_blank">
+                    <button class="content-button">More Informaton</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slider-title">
+                <p class="slider-number">07</p>
+                <p class="slider-name">System Design & Engineering</p>
+                <div class="slider__content">
+                  <p class="slider-number">07</p>
+                  <h4 class="content-title">System Design & Engineering</h4>
+                  <p class="content-data">13.02.2003</p>
+                  <form action="https://www.google.com" target="_blank">
+                    <button class="content-button">More Informaton</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slider-title">
+                <p class="slider-number">08</p>
+                <p class="slider-name">Client Care Plans</p>
+                <div class="slider__content">
+                  <p class="slider-number">08</p>
+                  <h4 class="content-title">Client Care Plans</h4>
+                  <p class="content-data">13.02.2003</p>
+                  <form action="www.google.com" target="_blank">
+                    <button class="content-button">More Informaton</button>
+                  </form>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
     </footer>
   </div>
   <script src="scripts/index.js"></script>

@@ -11,6 +11,22 @@ document.addEventListener("DOMContentLoaded", function () {
   const emailInput = document.querySelector(".form__input");
   const popup = document.getElementById("popup");
   const body = document.querySelector("body");
+
+  const construction = document.querySelector(".construction");
+  construction.classList.add("construction-animate");
+
+  const timer = document.querySelector(".timer");
+  timer.classList.add("construction-animate");
+
+  const logo = document.querySelector(".logo");
+  logo.classList.add("construction-animate");
+
+  const eventAnim = document.querySelector(".event");
+  eventAnim.classList.add("construction-animate");
+
+  const constBody = document.querySelector(".container__body");
+  constBody.classList.add("construction-animate2");
+
   function calcData() {
     const diff = deadline - new Date();
     if (diff <= 0) {
@@ -120,4 +136,67 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
+
+  function look(elemId) {
+    var elem = document.getElementById(elemId);
+    const containerBody = document.getElementById("ctn-body");
+    const containerFooter = document.getElementById("ctn-footer");
+
+    elem.style.display === "none"
+      ? (elem.style.display = "flex") &&
+        (containerBody.style.paddingBottom = "1191px") &&
+        (containerFooter.style.minHeight = "1194px") &&
+        elem.scrollIntoView({ behavior: "smooth", block: "start" })
+      : (elem.style.display = "none") &&
+        (containerBody.style.paddingBottom = "191px") &&
+        (containerFooter.style.minHeight = "194px") &&
+        elem.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+  const btnMore = document.querySelector(".button__more-event");
+  btnMore.addEventListener("click", function (e) {
+    e.preventDefault();
+    look("event");
+    btnMore.classList.toggle("up");
+  });
+
+  const slides = document.querySelectorAll(".slide");
+
+  const images = [
+    "/test_task_EA/images/foto/img_9678.png",
+    "/test_task_EA/images/foto/2.png",
+    "/test_task_EA/images/foto/3.png",
+    "/test_task_EA/images/foto/4.png",
+    "/test_task_EA/images/foto/5.png",
+    "/test_task_EA/images/foto/6.png",
+    "/test_task_EA/images/foto/7.png",
+    "/test_task_EA/images/foto/8.png",
+  ];
+
+  const sliderContent = document.querySelectorAll(".slider__content");
+
+  slides.forEach((slide, index) => {
+    slide.style.backgroundImage = `url(${images[index]})`;
+
+    slide.addEventListener("click", () => {
+      slides.forEach((el) => {
+        if (el.classList.contains("active") && el != slide) {
+          el.classList.remove("active");
+        }
+        sliderContent.forEach((item, j) => {
+          if (index == j && el.classList.contains("active") === false) {
+            item.classList.add("active");
+          } else {
+            item.classList.remove("active");
+          }
+        });
+      });
+
+      if (slide.classList.contains("active")) {
+        slide.classList.remove("active");
+      } else {
+        slide.classList.add("active");
+      }
+    });
+  });
 });
